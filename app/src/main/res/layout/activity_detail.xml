@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="@string/image_preview_desc"/>
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_posted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+</ScrollView>
